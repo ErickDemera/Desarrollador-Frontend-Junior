@@ -1,0 +1,97 @@
+body {
+    background-color:gainsboro;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color:cadetblue;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em 0;
+}
+
+nav {
+    background-color:black;
+    color: #925252;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    min-height: 200px;
+    padding: 40px 0;
+}
+
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+footer {
+    background-color:cadetblue;
+    ;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+ 
+img {
+    background-color: aqua;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
